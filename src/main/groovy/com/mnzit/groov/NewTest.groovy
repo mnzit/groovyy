@@ -23,7 +23,8 @@ import java.nio.file.Files
 import java.nio.file.Paths
 
 class NewTest {
-    private static String FO_JSON_RESPONSE = "${System.properties.'user.dir'}/src/main/resources/com/bofa/omni/tools/crc/data/input/foResponse.json"
+    private static String BASE = "${System.properties.'user.dir'}";
+    private static String FO_JSON_RESPONSE = BASE+"/src/main/resources/com/bofa/omni/tools/crc/data/input/foResponse.json"
 
     static void main(String[] args) {
         def binding = [:]
@@ -73,7 +74,7 @@ class NewTest {
         documentBuildFactory.setNamespaceAware(true)
         DocumentBuilder doccumentBuilder = documentBuildFactory.newDocumentBuilder()
         String docNS = "http://www.w3.org/1999/XSL/Format"
-        Document rootDocument = doccumentBuilder.parse(new File("/Users/manjitshakya/playground/groovy-compile-example/src/main/resources/com/bofa/omni/tools/crc/data/demo.xsl"))
+        Document rootDocument = doccumentBuilder.parse(new File(BASE+"/src/main/resources/com/bofa/omni/tools/crc/data/demo.xsl"))
         InputStream inputStream = IOUtils.toInputStream(foBody)
         Document foBodyDocument = doccumentBuilder.parse(inputStream)
         Node importedBodyNode = rootDocument.importNode(foBodyDocument.getFirstChild(), true)
