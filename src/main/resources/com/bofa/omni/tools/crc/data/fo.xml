@@ -1,0 +1,1328 @@
+<fo:root xmlns:fo='http://www.w3.org/1999/XSL/Format' xml:lang='en-US' xmlns:xml='http://www.w3.org/XML/1998/namespace'
+         font-family='any' font-style='normal' font-weight='normal'>
+    <fo:layout-master-set>
+        <fo:simple-page-master page-width='1024px' page-height='1326px' margin='50px 0px 0px 0px'
+                               master-name='all-except-last-page'>
+            <fo:region-body margin='0px 0px 80px 0px'/>
+            <fo:region-after region-name='all-except-last-page-footer' extent='80px'/>
+        </fo:simple-page-master>
+        <fo:simple-page-master page-width='1024px' page-height='1326px' margin='50px 0px 0px 0px'
+                               master-name='last-page'>
+            <fo:region-body margin='0px 0px 0px 0px'/>
+            <fo:region-after region-name='last-page-footer' extent='0px'/>
+        </fo:simple-page-master>
+        <fo:page-sequence-master master-name='all-pages'>
+            <fo:repeatable-page-master-alternatives>
+                <fo:conditional-page-master-reference page-position='last' master-reference='last-page'/>
+                <fo:conditional-page-master-reference page-position='any' master-reference='all-except-last-page'/>
+            </fo:repeatable-page-master-alternatives>
+        </fo:page-sequence-master>
+    </fo:layout-master-set>
+    <fo:declarations>
+        <x:xmpmeta xmlns:x='adobe:ns:meta/'>
+            <rdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+                <rdf:Description rdf:about=''>
+                    <dc:title xmlns:dc='http://purl.org/dc/elements/1.1/'>Finwell Action Plan</dc:title>
+                    <dc:creator xmlns:dc='http://purl.org/dc/elements/1.1/'>Merrill A Bank of America Company
+                    </dc:creator>
+                    <dc:description xmlns:dc='http://purl.org/dc/elements/1.1/'>Financial Welness Assessment Score and
+                        Action Plan
+                    </dc:description>
+                </rdf:Description>
+            </rdf:RDF>
+        </x:xmpmeta>
+    </fo:declarations>
+    <fo:page-sequence master-reference='all-pages'>
+        <fo:static-content flow-name='all-except-last-page-footer'>
+            <fo:block margin='18px 30px 40px 30px' line-height='120%' font-family='regular' font-style='normal'
+                      font-weight='normal'>
+                <fo:table>
+                    <fo:table-column column-width='550px'/>
+                    <fo:table-column/>
+                    <fo:table-body>
+                        <fo:table-row>
+                            <fo:table-cell display-align='center'>
+                                <fo:block text-align='left' font-size='13px'>PLEASE READ IMPORTANT INFORMATION AT THE
+                                    END OF THIS DOCUMENT
+                                </fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block text-align='right' font-size='28px'>Your Action Plan |
+                                    <fo:page-number/>
+                                </fo:block>
+                            </fo:table-cell>
+                        </fo:table-row>
+                    </fo:table-body>
+                </fo:table>
+            </fo:block>
+        </fo:static-content>
+        <fo:flow flow-name='xsl-region-body'>
+            <fo:block font-family='regular' font-style='normal' font-weight='normal'>
+                <fo:block margin='0px 0px 0px 60px' space-after='40px'>
+                    <fo:external-graphic
+                            src='url(file:/C:/Users/zkq3vl1/workspace/FOPDF/target/classes/com/bofa/ecom/finwell/assessment/pdf/Logo-Merrill.png)'
+                            fox:alt-text='Merrill A Bank of America Company'
+                            xmlns:fox='http://xmlgraphics.apache.org/fop/extensions'
+                            content-type='content-type:image/png'/>
+                </fo:block>
+                <fo:block role='H1' text-align='center' space-after='25px' font-size='28px' line-height='120%'>Prepared
+                    for: Test
+                </fo:block>
+                <fo:block text-align='center' padding='10px 0px 10px 0px' height='45px' background-color='#EDEDED'
+                          space-after='40px'>
+                    <fo:inline font-size='20px' line-height='120%'>Last Assessment Date: $$date</fo:inline>
+                </fo:block>
+                <fo:block space-after='40px' height='219px'>
+                    <fo:float float='start'>
+                        <fo:block margin='0px 150px'>
+                            <fo:instream-foreign-object fox:alt-text='Finwell Assessment Score 30'
+                                                        xmlns:fox='http://xmlgraphics.apache.org/fop/extensions'
+                                                        content-type='namespace-prefix:svg'>
+                                <svg:svg xmlns:svg='http://www.w3.org/2000/svg' height='219px' width='219px'
+                                         viewport='0px 0px 219px 219px'>
+                                    <svg:text x='50%' y='126px' font-family='regular' font-style='normal'
+                                              font-weight='normal' font-size='55px' fill='#012169' text-anchor='middle'>
+                                        30
+                                    </svg:text>
+                                    <svg:circle cx='109.2742415683894' cy='15.000269666360651' r='9.5' stroke='none'
+                                                fill='#EFA902'/>
+                                    <svg:circle cx='138.47298822307985' cy='19.551036951917695' r='9.5' stroke='none'
+                                                fill='#DCAB14'/>
+                                    <svg:circle cx='164.83850807680057' cy='32.897783819044236' r='9.5' stroke='none'
+                                                fill='#DCAB14'/>
+                                    <svg:circle cx='185.79255490600332' cy='53.73535110919761' r='9.5' stroke='none'
+                                                fill='#DCAB15'/>
+                                    <svg:circle cx='199.2860626423846' cy='80.02606312048236' r='9.5' stroke='none'
+                                                fill='#D3AD1C'/>
+                                    <svg:circle cx='204.0' cy='109.5' r='9.5' stroke='none' fill='#D3AD1C'/>
+                                    <svg:circle cx='199.3794905339043' cy='138.6877916493491' r='15' stroke='none'
+                                                fill='#B6B039'/>
+                                    <svg:circle cx='185.96979510336905' cy='165.02135117996278' r='9.5' stroke='none'
+                                                fill='#D8D8D8'/>
+                                    <svg:circle cx='165.08222851631496' cy='185.9255577222708' r='9.5' stroke='none'
+                                                fill='#D8D8D8'/>
+                                    <svg:circle cx='138.75935583388878' cy='199.3562190178614' r='9.5' stroke='none'
+                                                fill='#D8D8D8'/>
+                                    <svg:circle cx='109.57525287416429' cy='203.99997003705838' r='9.5' stroke='none'
+                                                fill='#D8D8D8'/>
+                                    <svg:circle cx='80.38379104422972' cy='199.4027050540968' r='9.5' stroke='none'
+                                                fill='#D8D8D8'/>
+                                    <svg:circle cx='54.03956136449529' cy='186.01398399219204' r='9.5' stroke='none'
+                                                fill='#D8D8D8'/>
+                                    <svg:circle cx='33.118728123050204' cy='165.14307060595667' r='9.5' stroke='none'
+                                                fill='#D8D8D8'/>
+                                    <svg:circle cx='19.667109479274487' cy='138.83090146400792' r='9.5' stroke='none'
+                                                fill='#D8D8D8'/>
+                                    <svg:circle cx='15.000119851747513' cy='109.65050570060801' r='9.5' stroke='none'
+                                                fill='#D8D8D8'/>
+                                    <svg:circle cx='19.574137436282186' cy='80.45539220145442' r='9.5' stroke='none'
+                                                fill='#D8D8D8'/>
+                                    <svg:circle cx='32.94187563928206' cy='54.100509078432445' r='9.5' stroke='none'
+                                                fill='#D8D8D8'/>
+                                    <svg:circle cx='53.79612258969424' cy='33.1630624045107' r='9.5' stroke='none'
+                                                fill='#D8D8D8'/>
+                                    <svg:circle cx='80.09757150566313' cy='19.690494942709947' r='9.5' stroke='none'
+                                                fill='#D8D8D8'/>
+                                </svg:svg>
+                            </fo:instream-foreign-object>
+                        </fo:block>
+                    </fo:float>
+                    <fo:block-container display-align='center' height='219px'>
+                        <fo:block margin='0px 206px' font-family='medium' font-style='normal' font-weight='500'
+                                  font-size='20px' space-after='25px' line-height='120%'>Your financial wellness score
+                            is a way for you to measure your financial health and identify where to focus to help
+                            improve your financial life.
+                        </fo:block>
+                    </fo:block-container>
+                </fo:block>
+                <fo:block/>
+                <fo:block space-after='60px'>
+                    <fo:block role='H2' space-after='40px' padding-top='10px' padding-bottom='10px' font-size='20px'
+                              line-height='120%' background-color='#EDEDED'>
+                        <fo:inline padding-left='60px' font-family='medium' font-style='normal' font-weight='500'>
+                            Questions &amp; Answers
+                        </fo:inline>
+                    </fo:block>
+                    <fo:block keep-together.within-page='always' line-height='120%' font-size='18px' role='P'>
+                        <fo:block margin-left='60px' margin-right='60px' padding-top='10px' padding-bottom='10px'
+                                  space-after='25px' background-color='#EDEDED'>
+                            <fo:block margin-left='20px' margin-right='20px'>1. What is your annual pre-tax household
+                                income?
+                            </fo:block>
+                        </fo:block>
+                        <fo:block space-after='25px' margin-left='100px' margin-right='80px'>
+                            <fo:block space-after='15px'>12</fo:block>
+                        </fo:block>
+                    </fo:block>
+                    <fo:block keep-together.within-page='always' line-height='120%' font-size='18px' role='P'>
+                        <fo:block margin-left='60px' margin-right='60px' padding-top='10px' padding-bottom='10px'
+                                  space-after='25px' background-color='#EDEDED'>
+                            <fo:block margin-left='20px' margin-right='20px'>2. What is your family status? (Check all
+                                that apply)
+                            </fo:block>
+                        </fo:block>
+                        <fo:block space-after='25px' margin-left='100px' margin-right='80px'>
+                            <fo:block space-after='15px'>Spouse/Partner</fo:block>
+                            <fo:block space-after='15px'>Child Dependents (2)</fo:block>
+                        </fo:block>
+                    </fo:block>
+                </fo:block>
+                <fo:block space-after='60px'>
+                    <fo:block space-after='60px'>
+                        <fo:block role='H2' keep-with-next.within-page='always' padding-top='10px' padding-bottom='10px'
+                                  background-color='#EDEDED' font-size='20px' line-height='120%'>
+                            <fo:inline padding-left='60px' padding-right='60px' font-family='medium' font-style='normal'
+                                       font-weight='500'>Spending &amp;amp; Budgeting
+                            </fo:inline>
+                        </fo:block>
+                        <fo:block>
+                            <fo:block space-before='40px'>
+                                <fo:block role='H3' keep-with-next.within-page='always' margin='0px 60px 0px 60px'
+                                          font-family='bold' font-style='normal' font-weight='bold' font-size='18px'
+                                          line-height='120%'>1)
+                                    <fo:inline>Create and maintain a budget to track and categorize your spending.
+                                    </fo:inline>
+                                </fo:block>
+                                <fo:block orphans='2' widows='2' margin='0px 80px 0px 80px' space-before='25px'
+                                          font-size='16px' line-height='120%' line-stacking-strategy='font-height'>The
+                                    best kind of budget is all about finding a balance- one that allows you to pay for
+                                    your necessities, save some money, pay down debt and then have some left over for
+                                    fun. The 50/30/20 budget guideline lets you do that with 50% of your income for
+                                    essential expenses, 30% for nonessential spending and 20% for saving and paying off
+                                    debt. Not only does it help you live within your means, but it also helps you
+                                    identify what those means really are.
+                                </fo:block>
+                                <fo:block>
+                                    <fo:block role='H4' keep-with-next.within-page='always' margin='0px 80px 0px 80px'
+                                              space-before='25px' font-family='bold' font-style='normal'
+                                              font-weight='bold' font-size='16px' line-height='120%'>Complete the Budget
+                                        and Debt Management Worksheet.
+                                    </fo:block>
+                                    <fo:block margin='0px 80px 0px 80px' orphans='2' widows='2' font-size='16px'
+                                              line-height='120%'>
+                                        <fo:block space-before='15px'>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>Document your
+                                                            monthly household income and add back any savings
+                                                            contributions or investments (for example, 401(k)
+                                                            contributions).
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>List your
+                                                            essential expenses (needs) and nonessential expenses (wants)
+                                                            on the worksheet.
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>List any
+                                                            additional savings or investments you?re making (for
+                                                            example, an IRA) and any monthly debt payments you?re
+                                                            making.
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>Review the
+                                                            worksheet to determine if you?re aligned to the 50/30/20
+                                                            rule.
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>If appropriate,
+                                                            identify areas where you could make adjustments.
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                        </fo:block>
+                                        <fo:block space-before='15px' color='#0073CF' font-family='medium'
+                                                  font-style='normal' font-weight='500'>
+                                            <fo:basic-link space-before='15px'
+                                                           external-destination='https://go.ml.com/lbd26'
+                                                           fox:alt-text='Budget and Debt Management Worksheet'
+                                                           xmlns:fox='http://xmlgraphics.apache.org/fop/extensions'>
+                                                Budget and Debt Management Worksheet
+                                            </fo:basic-link>
+                                        </fo:block>
+                                    </fo:block>
+                                    <fo:block role='H4' keep-with-next.within-page='always' margin='0px 80px 0px 80px'
+                                              space-before='25px' font-family='bold' font-style='normal'
+                                              font-weight='bold' font-size='16px' line-height='120%'>Monitor and review
+                                        your budget, making adjustments as needed.
+                                    </fo:block>
+                                    <fo:block margin='0px 80px 0px 80px' orphans='2' widows='2' font-size='16px'
+                                              line-height='120%'>
+                                        <fo:block space-before='15px'>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>Try to allocate
+                                                            20% of your income each month to saving and paying off debt.
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>Adjust your
+                                                            budget as needed when major life events occur.
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                        </fo:block>
+                                    </fo:block>
+                                    <fo:block role='H4' keep-with-next.within-page='always' margin='0px 80px 0px 80px'
+                                              space-before='25px' font-family='bold' font-style='normal'
+                                              font-weight='bold' font-size='16px' line-height='120%'>Understand the
+                                        risks of investments.
+                                    </fo:block>
+                                    <fo:block margin='0px 80px 0px 80px' orphans='2' widows='2' font-size='16px'
+                                              line-height='120%'>
+                                        <fo:block space-before='15px'>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>Investment
+                                                            products, including insurance products, are not insured by
+                                                            the FDIC; are not a deposit or other obligation of, or
+                                                            guaranteed by, Bank of America; and are subject to
+                                                            investment risks, including possible loss of the principal
+                                                            amount invested.
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>Insurance
+                                                            products are also not insured by any federal government
+                                                            agency, and obtaining an investment or insurance product
+                                                            from Merrill is not a condition to obtaining any banking
+                                                            service or activity from Bank of America.
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                        </fo:block>
+                                    </fo:block>
+                                </fo:block>
+                            </fo:block>
+                        </fo:block>
+                    </fo:block>
+                    <fo:block space-after='60px'>
+                        <fo:block role='H2' keep-with-next.within-page='always' padding-top='10px' padding-bottom='10px'
+                                  background-color='#EDEDED' font-size='20px' line-height='120%'>
+                            <fo:inline padding-left='60px' padding-right='60px' font-family='medium' font-style='normal'
+                                       font-weight='500'>Planning for the Future
+                            </fo:inline>
+                        </fo:block>
+                        <fo:block>
+                            <fo:block space-before='40px'>
+                                <fo:block role='H3' keep-with-next.within-page='always' margin='0px 60px 0px 60px'
+                                          font-family='bold' font-style='normal' font-weight='bold' font-size='18px'
+                                          line-height='120%'>1)
+                                    <fo:inline>Periodically review your investments and update as needed.</fo:inline>
+                                </fo:block>
+                                <fo:block orphans='2' widows='2' margin='0px 80px 0px 80px' space-before='25px'
+                                          font-size='16px' line-height='120%' line-stacking-strategy='font-height'>
+                                    Changes in your life and the economy may affect your goals and their timing.
+                                    Periodically reviewing your investments may help you monitor whether you?re on track
+                                    with your goals as well as determine if you need to make any adjustments to your
+                                    investments or your approach.
+                                </fo:block>
+                                <fo:block>
+                                    <fo:block role='H4' keep-with-next.within-page='always' margin='0px 80px 0px 80px'
+                                              space-before='25px' font-family='bold' font-style='normal'
+                                              font-weight='bold' font-size='16px' line-height='120%'>Identify whether
+                                        your goals or risk tolerance have changed.
+                                    </fo:block>
+                                    <fo:block margin='0px 80px 0px 80px' orphans='2' widows='2' font-size='16px'
+                                              line-height='120%'>
+                                        <fo:block space-before='15px'>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>If you?ve
+                                                            encountered life or financial changes, document the impact
+                                                            on your goals or their timing.
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>Next, evaluate if
+                                                            your tolerance for risk has shifted based on these changes,
+                                                            your age, or comfort with the overall market or economy.
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>If you?re working
+                                                            with a financial specialist, discuss these changes with her
+                                                            or him.
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>Talk to a
+                                                            financial specialist about your goals.
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                        </fo:block>
+                                        <fo:block space-before='15px' color='#0073CF' font-family='medium'
+                                                  font-style='normal' font-weight='500'>
+                                            <fo:basic-link space-before='15px'
+                                                           external-destination='https://rg.ml.com/2018/PartComm/RISK/index.html'
+                                                           fox:alt-text='Risk assessment and investment guide'
+                                                           xmlns:fox='http://xmlgraphics.apache.org/fop/extensions'>Risk
+                                                assessment and investment guide
+                                            </fo:basic-link>
+                                        </fo:block>
+                                    </fo:block>
+                                    <fo:block role='H4' keep-with-next.within-page='always' margin='0px 80px 0px 80px'
+                                              space-before='25px' font-family='bold' font-style='normal'
+                                              font-weight='bold' font-size='16px' line-height='120%'>Confirm your
+                                        investment approach.
+                                    </fo:block>
+                                    <fo:block margin='0px 80px 0px 80px' orphans='2' widows='2' font-size='16px'
+                                              line-height='120%'>
+                                        <fo:block space-before='15px'>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>Determine if your
+                                                            current investment approach (i.e. self-directed, guided,
+                                                            financial advisor) still makes sense for you, or if you want
+                                                            to change it.
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>If you want to
+                                                            change your approach, consider your options and proceed
+                                                            accordingly (research financial advisors, change/open new
+                                                            accounts, etc.)
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                        </fo:block>
+                                        <fo:block space-before='15px' color='#0073CF' font-family='medium'
+                                                  font-style='normal' font-weight='500'>
+                                            <fo:basic-link space-before='15px'
+                                                           external-destination='https://www.education.ml.com/bol/Pages/Article.aspx?Title=investingbeyondyour401khowtogetstarted'
+                                                           fox:alt-text='Investing beyond your 401(k) - how to get started'
+                                                           xmlns:fox='http://xmlgraphics.apache.org/fop/extensions'>
+                                                Investing beyond your 401(k) - how to get started
+                                            </fo:basic-link>
+                                        </fo:block>
+                                    </fo:block>
+                                    <fo:block role='H4' keep-with-next.within-page='always' margin='0px 80px 0px 80px'
+                                              space-before='25px' font-family='bold' font-style='normal'
+                                              font-weight='bold' font-size='16px' line-height='120%'>Monitor and adjust
+                                        your asset allocation and mix of investments.
+                                    </fo:block>
+                                    <fo:block margin='0px 80px 0px 80px' orphans='2' widows='2' font-size='16px'
+                                              line-height='120%'>
+                                        <fo:block space-before='15px'>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>Periodically
+                                                            review your portfolio?s asset allocation and mix of
+                                                            investments.
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>Change your asset
+                                                            allocation or specific investments as appropriate.
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>If you?re working
+                                                            with a financial advisor, discuss it with her or him.
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                        </fo:block>
+                                        <fo:block space-before='15px' color='#0073CF' font-family='medium'
+                                                  font-style='normal' font-weight='500'>
+                                            <fo:basic-link space-before='15px'
+                                                           external-destination='https://www.education.ml.com/bol/Pages/Article.aspx?Title=howtomaintainyourbalanceinanupanddownmarket'
+                                                           fox:alt-text='How to maintain a balance in an up-and-down market'
+                                                           xmlns:fox='http://xmlgraphics.apache.org/fop/extensions'>How
+                                                to maintain a balance in an up-and-down market
+                                            </fo:basic-link>
+                                        </fo:block>
+                                    </fo:block>
+                                </fo:block>
+                            </fo:block>
+                        </fo:block>
+                    </fo:block>
+                    <fo:block space-after='60px'>
+                        <fo:block role='H2' keep-with-next.within-page='always' padding-top='10px' padding-bottom='10px'
+                                  background-color='#EDEDED' font-size='20px' line-height='120%'>
+                            <fo:inline padding-left='60px' padding-right='60px' font-family='medium' font-style='normal'
+                                       font-weight='500'>Saving for other Goals
+                            </fo:inline>
+                        </fo:block>
+                        <fo:block>
+                            <fo:block space-before='40px'>
+                                <fo:block role='H3' keep-with-next.within-page='always' margin='0px 60px 0px 60px'
+                                          font-family='bold' font-style='normal' font-weight='bold' font-size='18px'
+                                          line-height='120%'>1)Consider increasing your savings for health care.
+                                    <fo:inline font-size='12px' font-family='regular' font-style='normal'
+                                               font-weight='normal' baseline-shift='super'>1
+                                    </fo:inline>
+                                    <fo:inline font-size='12px' font-family='regular' font-style='normal'
+                                               font-weight='normal' baseline-shift='super'>2
+                                    </fo:inline>
+                                </fo:block>
+                                <fo:block orphans='2' widows='2' margin='0px 80px 0px 80px' space-before='25px'
+                                          font-size='16px' line-height='120%' line-stacking-strategy='font-height'>It?s
+                                    important to keep saving for health care costs for your retirement years, and find
+                                    additional ways to save more if possible. After you retire, you may no longer have
+                                    health insurance from an employer, and it?s estimated that a 65-year old couple
+                                    could need $273,000 just for health care costs in retirement.<fo:inline
+                                            font-size='12px' font-family='regular' font-style='normal'
+                                            font-weight='normal' baseline-shift='super'>2</fo:inline>With rising health
+                                    care costs and increasing life expectancy, you could end up paying for health care
+                                    for more years than you anticipate.
+                                </fo:block>
+                                <fo:block>
+                                    <fo:block role='H4' keep-with-next.within-page='always' margin='0px 80px 0px 80px'
+                                              space-before='25px' font-family='bold' font-style='normal'
+                                              font-weight='bold' font-size='16px' line-height='120%'>Consider using a
+                                        Health Savings Account (HSA) as an option for health care savings.
+                                    </fo:block>
+                                    <fo:block margin='0px 80px 0px 80px' orphans='2' widows='2' font-size='16px'
+                                              line-height='120%'>
+                                        <fo:block space-before='15px'>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>If you?re not
+                                                            already enrolled in an eligible high-deductible health care
+                                                            plan, assess if it makes sense for you to join one.
+                                                            Generally premiums are lower but you may have higher
+                                                            out-of-pocket health care expenses. Take the time to do the
+                                                            math and see if this option could be a better choice for
+                                                            your particular situation.
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>Next, consider
+                                                            opening an HSA, as you may contribute pre-tax money to the
+                                                            account, your money grows tax-free, and you can use the
+                                                            money to pay for qualified medical expenses tax-free.
+                                                            <fo:inline font-size='12px' font-family='regular'
+                                                                       font-style='normal' font-weight='normal'
+                                                                       baseline-shift='super'>3
+                                                            </fo:inline>
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>If you can,
+                                                            consider saving more in your HSA than you anticipate using
+                                                            for the current year&apos;s medical expenses to allow your
+                                                            balance to have the potential to grow tax-free to use in the
+                                                            future, including retirement.
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>Within limits,
+                                                            set a goal for how much to save in your HSA each year to
+                                                            take advantage of tax-savings.
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                        </fo:block>
+                                        <fo:block space-before='15px' color='#0073CF' font-family='medium'
+                                                  font-style='normal' font-weight='500'>
+                                            <fo:basic-link space-before='15px'
+                                                           external-destination='https://bcove.video/2FJcUP2'
+                                                           fox:alt-text='401(K) and Health Savings Account (HSA): Better Together'
+                                                           xmlns:fox='http://xmlgraphics.apache.org/fop/extensions'>
+                                                401(K) and Health Savings Account (HSA): Better Together
+                                            </fo:basic-link>
+                                        </fo:block>
+                                        <fo:block space-before='15px' color='#0073CF' font-family='medium'
+                                                  font-style='normal' font-weight='500'>
+                                            <fo:basic-link space-before='15px'
+                                                           external-destination='https://www.education.ml.com/bol/Pages/Article.aspx?Title=makingthemostofyourhsa-strategiesforeveryageandstage'
+                                                           fox:alt-text='Make the most of your Health Savings Account'
+                                                           xmlns:fox='http://xmlgraphics.apache.org/fop/extensions'>Make
+                                                the most of your Health Savings Account
+                                            </fo:basic-link>
+                                        </fo:block>
+                                    </fo:block>
+                                    <fo:block role='H4' keep-with-next.within-page='always' margin='0px 80px 0px 80px'
+                                              space-before='25px' font-family='bold' font-style='normal'
+                                              font-weight='bold' font-size='16px' line-height='120%'>Consider other
+                                        types of accounts for your short term health.
+                                    </fo:block>
+                                    <fo:block margin='0px 80px 0px 80px' orphans='2' widows='2' font-size='16px'
+                                              line-height='120%'>
+                                        <fo:block space-before='15px'>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>If you are not
+                                                            eligible for an HSA, consider other tax-advantaged accounts
+                                                            that your employer may offer such as a Flexible Spending
+                                                            Account or a Dependent Care Flexible Spending Account.
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>If you have maxed
+                                                            out your HSA, consider contributing additional funds to a
+                                                            Limited Purpose Flexible Spending Account to use for this
+                                                            year&apos;s dental and vision expenses.
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>If you don&apos;t
+                                                            have an HSA, consider traditional investment or savings
+                                                            accounts.
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                        </fo:block>
+                                    </fo:block>
+                                    <fo:block role='H4' keep-with-next.within-page='always' margin='0px 80px 0px 80px'
+                                              space-before='25px' font-family='bold' font-style='normal'
+                                              font-weight='bold' font-size='16px' line-height='120%'>Take care of your
+                                        health today to help minimize costly health issues in the future.
+                                    </fo:block>
+                                    <fo:block margin='0px 80px 0px 80px' orphans='2' widows='2' font-size='16px'
+                                              line-height='120%'>
+                                        <fo:block space-before='15px'>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>Take advantage of
+                                                            any health care resources your employer provides.
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>This could
+                                                            include screenings, immunizations, discounts and education.
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                        </fo:block>
+                                    </fo:block>
+                                </fo:block>
+                            </fo:block>
+                            <fo:block space-before='40px'>
+                                <fo:block role='H3' keep-with-next.within-page='always' margin='0px 60px 0px 60px'
+                                          font-family='bold' font-style='normal' font-weight='bold' font-size='18px'
+                                          line-height='120%'>2)
+                                    <fo:inline>Saving to buy your first home.</fo:inline>
+                                </fo:block>
+                                <fo:block orphans='2' widows='2' margin='0px 80px 0px 80px' space-before='25px'
+                                          font-size='16px' line-height='120%' line-stacking-strategy='font-height'>It&apos;s
+                                    important to be prepared when buying your first home. It may be one of the largest
+                                    purchases and financial decisions of your life. There?s a lot to learn about the
+                                    process, and there are many financial considerations in addition to the actual
+                                    purchase price of a home.
+                                </fo:block>
+                                <fo:block>
+                                    <fo:block role='H4' keep-with-next.within-page='always' margin='0px 80px 0px 80px'
+                                              space-before='25px' font-family='bold' font-style='normal'
+                                              font-weight='bold' font-size='16px' line-height='120%'>Determine if buying
+                                        a house makes sense for you.
+                                    </fo:block>
+                                    <fo:block margin='0px 80px 0px 80px' orphans='2' widows='2' font-size='16px'
+                                              line-height='120%'>
+                                        <fo:block space-before='15px'>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>Evaluate the pros
+                                                            and cons of purchasing vs. renting.
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>Familiarize
+                                                            yourself with key financial considerations ? down payment,
+                                                            fees, taxes, insurance and maintenance ? to help you decide
+                                                            if you?re ready to buy.
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                        </fo:block>
+                                        <fo:block space-before='15px' color='#0073CF' font-family='medium'
+                                                  font-style='normal' font-weight='500'>
+                                            <fo:basic-link space-before='15px'
+                                                           external-destination='https://bettermoneyhabits.bankofamerica.com/en/home-ownership/should-i-rent-or-buy'
+                                                           fox:alt-text='Is buying a home right for you?'
+                                                           xmlns:fox='http://xmlgraphics.apache.org/fop/extensions'>Is
+                                                buying a home right for you?
+                                            </fo:basic-link>
+                                        </fo:block>
+                                    </fo:block>
+                                    <fo:block role='H4' keep-with-next.within-page='always' margin='0px 80px 0px 80px'
+                                              space-before='25px' font-family='bold' font-style='normal'
+                                              font-weight='bold' font-size='16px' line-height='120%'>Learn about the
+                                        home buying process.
+                                    </fo:block>
+                                    <fo:block margin='0px 80px 0px 80px' orphans='2' widows='2' font-size='16px'
+                                              line-height='120%'>
+                                        <fo:block space-before='15px'>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>Learn about major
+                                                            steps in the home buying process and the different types of
+                                                            mortgages.
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>Understand that
+                                                            the total cost of homeownership is more than the purchase
+                                                            price of the house. There are fees associated with the
+                                                            actual purchase transaction, as well as ongoing maintenance
+                                                            costs, taxes, insurance, utilities and possibly association
+                                                            fees.
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                        </fo:block>
+                                        <fo:block space-before='15px' color='#0073CF' font-family='medium'
+                                                  font-style='normal' font-weight='500'>
+                                            <fo:basic-link space-before='15px'
+                                                           external-destination='https://bettermoneyhabits.bankofamerica.com/en/home-ownership/preparing-to-buy-a-house'
+                                                           fox:alt-text='Ready to buy a home? Read this first'
+                                                           xmlns:fox='http://xmlgraphics.apache.org/fop/extensions'>
+                                                Ready to buy a home? Read this first
+                                            </fo:basic-link>
+                                        </fo:block>
+                                    </fo:block>
+                                    <fo:block role='H4' keep-with-next.within-page='always' margin='0px 80px 0px 80px'
+                                              space-before='25px' font-family='bold' font-style='normal'
+                                              font-weight='bold' font-size='16px' line-height='120%'>Estimate what you
+                                        can afford.
+                                    </fo:block>
+                                    <fo:block margin='0px 80px 0px 80px' orphans='2' widows='2' font-size='16px'
+                                              line-height='120%'>
+                                        <fo:block space-before='15px'>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>Try our
+                                                            affordability calculator to see how a new home will fit into
+                                                            your budget. When you&apos;re thinking about buying a new
+                                                            home, ask yourself, ?How much should I borrow?? instead of,
+                                                            ?How much could I borrow?? It&apos;s an important
+                                                            distinction: Rather than focusing on the largest loan amount
+                                                            you could possibly get from a mortgage, this approach
+                                                            focuses on the amount that fits your budget.
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>Remember there
+                                                            will be ongoing, recurring expenses after the actual
+                                                            purchase, such as ongoing maintenance costs, taxes,
+                                                            insurance, utilities and possibly association fees.
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                        </fo:block>
+                                        <fo:block space-before='15px' color='#0073CF' font-family='medium'
+                                                  font-style='normal' font-weight='500'>
+                                            <fo:basic-link space-before='15px'
+                                                           external-destination='https://loans.bankofamerica.com/en/tools/affordability-snapshot.html?standalone=y'
+                                                           fox:alt-text='Home mortgage affordability calculator'
+                                                           xmlns:fox='http://xmlgraphics.apache.org/fop/extensions'>Home
+                                                mortgage affordability calculator
+                                            </fo:basic-link>
+                                        </fo:block>
+                                    </fo:block>
+                                    <fo:block role='H4' keep-with-next.within-page='always' margin='0px 80px 0px 80px'
+                                              space-before='25px' font-family='bold' font-style='normal'
+                                              font-weight='bold' font-size='16px' line-height='120%'>Identify costs for
+                                        the specific house you want to buy.
+                                    </fo:block>
+                                    <fo:block margin='0px 80px 0px 80px' orphans='2' widows='2' font-size='16px'
+                                              line-height='120%'>
+                                        <fo:block space-before='15px'>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>Estimate how much
+                                                            cash you will have for a down payment.
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>Estimate monthly
+                                                            mortgage payments for a specific loan amount with the
+                                                            Mortgage Calculator.
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>Use the Closing
+                                                            Costs Calculator to identify and ensure you budget for one
+                                                            time costs.
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                        </fo:block>
+                                        <fo:block space-before='15px' color='#0073CF' font-family='medium'
+                                                  font-style='normal' font-weight='500'>
+                                            <fo:basic-link space-before='15px'
+                                                           external-destination='https://www.bankofamerica.com/mortgage/mortgage-calculator/'
+                                                           fox:alt-text='Mortgage Calculator'
+                                                           xmlns:fox='http://xmlgraphics.apache.org/fop/extensions'>
+                                                Mortgage Calculator
+                                            </fo:basic-link>
+                                        </fo:block>
+                                        <fo:block space-before='15px' color='#0073CF' font-family='medium'
+                                                  font-style='normal' font-weight='500'>
+                                            <fo:basic-link space-before='15px'
+                                                           external-destination='https://www.bankofamerica.com/mortgage/closing-costs-calculator/'
+                                                           fox:alt-text='Estimate your closing costs calculator'
+                                                           xmlns:fox='http://xmlgraphics.apache.org/fop/extensions'>
+                                                Estimate your closing costs calculator
+                                            </fo:basic-link>
+                                        </fo:block>
+                                    </fo:block>
+                                    <fo:block role='H4' keep-with-next.within-page='always' margin='0px 80px 0px 80px'
+                                              space-before='25px' font-family='bold' font-style='normal'
+                                              font-weight='bold' font-size='16px' line-height='120%'>Reassess and revise
+                                        your budget if needed.
+                                    </fo:block>
+                                    <fo:block margin='0px 80px 0px 80px' orphans='2' widows='2' font-size='16px'
+                                              line-height='120%'>
+                                        <fo:block space-before='15px'>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>Assess whether
+                                                            you can afford to buy vs. renting while keeping to your
+                                                            budget.
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>Visit the Down
+                                                            Payment Resource Center to identify any assistance programs
+                                                            you may be eligible for.
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>Revisit the
+                                                            Affordability and Mortgage Calculators as needed.
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                        </fo:block>
+                                        <fo:block space-before='15px' color='#0073CF' font-family='medium'
+                                                  font-style='normal' font-weight='500'>
+                                            <fo:basic-link space-before='15px'
+                                                           external-destination='https://mortgage.bankofamerica.com/mortgage-down-payment-center'
+                                                           fox:alt-text='Down Payment Resource Center'
+                                                           xmlns:fox='http://xmlgraphics.apache.org/fop/extensions'>Down
+                                                Payment Resource Center
+                                            </fo:basic-link>
+                                        </fo:block>
+                                    </fo:block>
+                                    <fo:block role='H4' keep-with-next.within-page='always' margin='0px 80px 0px 80px'
+                                              space-before='25px' font-family='bold' font-style='normal'
+                                              font-weight='bold' font-size='16px' line-height='120%'>Apply for a
+                                        mortgage.
+                                    </fo:block>
+                                    <fo:block margin='0px 80px 0px 80px' orphans='2' widows='2' font-size='16px'
+                                              line-height='120%'>
+                                        <fo:block space-before='15px'>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>Consider getting
+                                                            prequalified or preapproved.
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>Get familiar with
+                                                            loan types including first time home buyer programs.
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>Consider
+                                                            first-time home buyer programs or an FHA loan, if eligible.
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>Request a free
+                                                            credit report from the 3 credit bureaus (Experian,
+                                                            TransUnion and Equifax) by visiting annualcreditreport.com.
+                                                            Check for errors before applying for a mortgage as your
+                                                            repayment history can affect the approval process and the
+                                                            interest rate of your loan.
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                            <fo:list-block>
+                                                <fo:list-item>
+                                                    <fo:list-item-label end-indent='label-end()'>
+                                                        <fo:block>
+                                                            <fo:character character='?'/>
+                                                        </fo:block>
+                                                    </fo:list-item-label>
+                                                    <fo:list-item-body start-indent='body-start()'>
+                                                        <fo:block line-stacking-strategy='font-height'>Consider
+                                                            obtaining loan estimates from multiple lenders.
+                                                        </fo:block>
+                                                    </fo:list-item-body>
+                                                </fo:list-item>
+                                            </fo:list-block>
+                                        </fo:block>
+                                    </fo:block>
+                                </fo:block>
+                            </fo:block>
+                        </fo:block>
+                    </fo:block>
+                </fo:block>
+                <fo:footnote>
+                    <fo:inline/>
+                    <fo:footnote-body>
+                        <fo:block padding-top='30px' padding-bottom='40px' background-color='#EDEDED'
+                                  keep-together.within-page='always'>
+                            <fo:block margin='0px 40px 0px 40px' font-size='16px' font-family='bold' font-style='normal'
+                                      font-weight='bold' line-height='120%'>
+                                <fo:block space-after='15px'>IMPORTANT INFORMATION</fo:block>
+                                <fo:block space-after='15px'>Investing in securities involves risks, and there is always
+                                    the potential of losing money when you invest in securities.
+                                </fo:block>
+                                <fo:block space-after='15px'>Asset allocation, diversification and rebalancing do not
+                                    ensure a profit or protect against loss in declining markets.
+                                </fo:block>
+                                <fo:block space-after='15px'>Neither Merrill Lynch nor any of its affiliates or
+                                    financial advisors provide legal, tax or accounting advice. You should consult your
+                                    legal and/or tax advisors before making any financial decisions.
+                                </fo:block>
+                            </fo:block>
+                            <fo:block-container display-align='center' height='120px' space-after='40px'>
+                                <fo:block margin='0px 40px 0px 40px' font-size='16px' font-family='bold'
+                                          font-style='normal' font-weight='bold' line-height='120%'>
+                                    <fo:block space-after='10px'>Investment products, insurance and annuity products:
+                                    </fo:block>
+                                    <fo:table table-layout='fixed' border-width='2px' border-style='solid'>
+                                        <fo:table-column column-width='314.6666666667'/>
+                                        <fo:table-column column-width='314.6666666667'/>
+                                        <fo:table-column column-width='314.6666666667'/>
+                                        <fo:table-body>
+                                            <fo:table-row>
+                                                <fo:table-cell border-width='3px' border-style='solid'
+                                                               text-align='center' padding='5px'>
+                                                    <fo:block>Are Not FDIC Insured</fo:block>
+                                                </fo:table-cell>
+                                                <fo:table-cell border-width='3px' border-style='solid'
+                                                               text-align='center' padding='5px'>
+                                                    <fo:block>Are Not Bank Guaranteed</fo:block>
+                                                </fo:table-cell>
+                                                <fo:table-cell border-width='3px' border-style='solid'
+                                                               text-align='center' padding='5px'>
+                                                    <fo:block>May Lose Value</fo:block>
+                                                </fo:table-cell>
+                                            </fo:table-row>
+                                            <fo:table-row>
+                                                <fo:table-cell border-width='3px' border-style='solid'
+                                                               text-align='center' padding='5px'>
+                                                    <fo:block>Are Not Deposits</fo:block>
+                                                </fo:table-cell>
+                                                <fo:table-cell border-width='3px' border-style='solid'
+                                                               text-align='center' padding='5px'>
+                                                    <fo:block>Are Not Insured by Any Federal Government Agency
+                                                    </fo:block>
+                                                </fo:table-cell>
+                                                <fo:table-cell border-width='3px' border-style='solid'
+                                                               text-align='center' padding='5px'>
+                                                    <fo:block>Are Not a Condition to Any Banking Service or Activity
+                                                    </fo:block>
+                                                </fo:table-cell>
+                                            </fo:table-row>
+                                        </fo:table-body>
+                                    </fo:table>
+                                </fo:block>
+                            </fo:block-container>
+                            <fo:block font-size='16px' margin='0px 40px 0px 40px' font-family='regular'
+                                      font-style='normal' font-weight='normal' line-height='120%'>
+                                <fo:block space-after='10px'>Merrill Lynch makes available products and services offered
+                                    by Merrill Lynch, Pierce, Fenner &amp;amp; Smith, Incorporated (MLPF&amp;amp;S), a
+                                    registered broker-dealer and Member Securities Investor Protection Corporation
+                                    (SIPC), and other subsidiaries of Bank of America Corporation. Insurance and annuity
+                                    products are offered through Merrill Lynch Life Agency Inc., a licensed insurance
+                                    agency and wholly owned subsidiary of Bank of America Corporation.
+                                </fo:block>
+                                <fo:block space-after='10px'>Merrill Lynch is the marketing name for Merrill Lynch
+                                    Wealth Management, and Merrill Edge?, both of which are made available through
+                                    Merrill Lynch, Pierce, Fenner &amp;amp; Smith, Incorporated (MLPF&amp;amp;S).
+                                    Merrill Edge is available through Merrill Lynch, Pierce, Fenner &amp;amp; Smith,
+                                    Incorporated (MLPF&amp;amp;S), and consists of the Merrill Edge Advisory Center
+                                    (investment guidance) and self-directed online investing.
+                                </fo:block>
+                                <fo:block space-after='10px'>Merrill Lynch, Pierce, Fenner &amp;amp; Smith Incorporated
+                                    (?Merrill Lynch?) provides products and services to various employers, their
+                                    employees and other individuals. In connection with providing these products and
+                                    services, and at the request of the employer, Merrill Lynch makes available websites
+                                    on the internet, mobile device applications, and written materials, including
+                                    brochures, in order to provide you with information regarding your plan. Under no
+                                    circumstances should these websites, applications, and material, or any information
+                                    included in these websites, applications, and materials, be considered an offer to
+                                    sell or a solicitation to buy any securities, products, or services from Merrill
+                                    Lynch or any other person or entity.
+                                </fo:block>
+                                <fo:block space-after='10px'>Trust and fiduciary services are provided by U.S. Trust, a
+                                    division of Bank of America, N.A., Member FDIC, or U.S. Trust Company of Delaware.
+                                    Both are wholly owned subsidiaries of Bank of America Corporation.
+                                </fo:block>
+                                <fo:block space-after='10px'>Banking products are provided by Bank of America, N.A. and
+                                    affiliated banks, Members FDIC and wholly owned subsidiaries of Bank of America
+                                    Corporation.
+                                </fo:block>
+                                <fo:block space-after='10px'>MLPF&amp;amp;S and Bank of America, N.A., make available
+                                    investment products sponsored managed, distributed or provided by companies that are
+                                    affiliates of Bank of America Corporation.
+                                </fo:block>
+                                <fo:block space-after='10px'>? 2019 Bank of America Corporation. All Rights Reserved.
+                                </fo:block>
+                                <fo:block space-after='10px'>AR4M3JJP</fo:block>
+                            </fo:block>
+                        </fo:block>
+                    </fo:footnote-body>
+                </fo:footnote>
+            </fo:block>
+        </fo:flow>
+    </fo:page-sequence>
+</fo:root>

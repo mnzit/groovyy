@@ -2,6 +2,7 @@ package com.mnzit.groov
 
 import groovy.text.SimpleTemplateEngine
 import groovy.text.Template
+import groovy.text.XmlTemplateEngine
 import org.apache.commons.io.IOUtils
 import org.apache.fop.apps.FOUserAgent
 import org.apache.fop.apps.Fop
@@ -27,8 +28,10 @@ class NewTest {
     static void main(String[] args) {
         def binding = [:]
         def colors = ["Red", "Green", "Yellow"]
+        def regex =  "<a[^>]+href=\\'(.*?)\\'[^>]*>(.*?)<\\/a>"
 
-        binding.colors = colors
+        binding.regexxx = regex
+        binding.instruction = "Download and save this <a href='https://go.ml.com/lbd26url' target='_blank' data-bactmln='action-AC200002-step121link0'>budget and debt management worksheet</a> and <a href='https://go.ml.com/lbd26url2' target='_blank' data-bactmln='action-AC200002-step121link0'>budget and debt management worksheet2</a> to set up your budget and monitor your progress."
 
         try {
             OutputStream out = new java.io.FileOutputStream("demo.pdf");
@@ -103,7 +106,7 @@ class NewTest {
     }
 
     private static String prepareFOString(Object binding, String data) {
-        def engine = new SimpleTemplateEngine()
+        def engine = new XmlTemplateEngine()
         Template template = (Template) engine.createTemplate(data)
         Writable wrt = template.make((Map) binding)
 

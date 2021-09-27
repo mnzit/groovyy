@@ -54,7 +54,7 @@
         </fo:static-content>
 
         <fo:flow flow-name="xsl-region-body">
-            <gsp:scriptlet>def logoPath = Thread.currentThread().getContextClassLoader().getResource("com/bofa/ecom/finwell/assessment/pdf/Logo-Merrill.png").toURI()</gsp:scriptlet>
+            <gsp:scriptlet>def logoPath = Thread.currentThread().getContextClassLoader().getResource("/Users/manjitshakya/playground/groovy-compile-example/src/main/groovy/com/mnzit/groov/test.jpeg").toURI()</gsp:scriptlet>
             <fo:block font-family="regular" font-style="normal" font-weight="normal"> <!-- FO Block For Body -->
                 <fo:block margin="0px 0px 0px 60px" space-after="40px">
                     <fo:external-graphic src="url(${logoPath})" fox:alt-text="${logoAltText}" content-type="content-type:image/png">
