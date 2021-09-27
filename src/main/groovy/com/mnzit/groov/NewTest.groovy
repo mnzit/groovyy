@@ -2,7 +2,6 @@ package com.mnzit.groov
 
 import groovy.text.SimpleTemplateEngine
 import groovy.text.Template
-import groovy.text.XmlTemplateEngine
 import org.apache.commons.io.IOUtils
 import org.apache.fop.apps.FOUserAgent
 import org.apache.fop.apps.Fop
@@ -14,16 +13,11 @@ import org.xml.sax.InputSource
 
 import javax.xml.parsers.DocumentBuilder
 import javax.xml.parsers.DocumentBuilderFactory
-import javax.xml.transform.OutputKeys
-import javax.xml.transform.Result
-import javax.xml.transform.Source
-import javax.xml.transform.Transformer
-import javax.xml.transform.TransformerFactory
+import javax.xml.transform.*
 import javax.xml.transform.dom.DOMSource
 import javax.xml.transform.sax.SAXResult
 import javax.xml.transform.sax.SAXSource
 import javax.xml.transform.stream.StreamResult
-import javax.xml.transform.stream.StreamSource
 import java.nio.file.Files
 import java.nio.file.Paths
 
@@ -41,9 +35,8 @@ class NewTest {
             String foRespBodyXML = parseJson(FO_JSON_RESPONSE)
 
             String foFullXML = getFullFOXMLString(foRespBodyXML)
-            println foFullXML
             foFullXML = prepareFOString(binding, foFullXML)
-            println foFullXML
+            println foFullXML;
             Source src = new SAXSource(new InputSource(new StringReader(foFullXML)))
 
             FopFactory fopFactory = FopFactory.newInstance(new File(".").toURI());
@@ -78,11 +71,13 @@ class NewTest {
         DocumentBuilder doccumentBuilder = documentBuildFactory.newDocumentBuilder()
         String docNS = "http://www.w3.org/1999/XSL/Format"
         Document rootDocument = doccumentBuilder.parse(new File("/Users/manjitshakya/playground/groovy-compile-example/src/main/resources/com/bofa/omni/tools/crc/data/demo.xsl"))
-//        InputStream inputStream = IOUtils.toInputStream(foBody)
-//        Document foBodyDocument = doccumentBuilder.parse(inputStream)
-//        Node importedBodyNode = rootDocument.importNode(foBodyDocument.getFirstChild(), true)
-//        rootDocument.getElementsByTagNameNS(docNS, "flow").item(0).appendChild(importedBodyNode)
-//        IOUtils.closeQuietly(inputStream)
+        InputStream inputStream = IOUtils.toInputStream(foBody)
+        Document foBodyDocument = doccumentBuilder.parse(inputStream)
+        Node importedBodyNode = rootDocument.importNode(foBodyDocument.getFirstChild(), true)
+
+        rootDocument.getElementsByTagNameNS(docNS, "flow").item(0).appendChild(importedBodyNode)
+
+        IOUtils.closeQuietly(inputStream)
         return convertToXMLString(rootDocument)
     }
 
@@ -95,7 +90,6 @@ class NewTest {
         com.google.gson.JsonObject payload = object.get("payload").getAsJsonObject()
         com.google.gson.JsonObject foContent = payload.get("foContent").getAsJsonObject()
         String xml = foContent.get("foXml").getAsString()
-        print xml
         return xml
     }
 
